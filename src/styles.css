@@ -7,21 +7,29 @@ app-main {
     height: 100vh;
     width: 100%;
     background-color: red;
-    color: red;
-    display: flex;
-    padding: 0;
-    margin: 0;
+    /* display: flex; */
 }
 
 .banner-container {
     height: 30vh;
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     background-color: blue;
-    display: flex;
+    /* display: flex; */
 }
 
 .banner_image {
     width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+
+.games-container{
+    display: grid;
+    background-color: #15171D;
+}
+
+.game{
+    height: 20vh;
+    /* background-color: red; */
 }
