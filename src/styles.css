@@ -20,3 +20,8 @@ app-main {
     background-color: blue;
     display: flex;
 }
+
+.banner_image {
+    width: 100%;
+    object-fit: cover;
+}
