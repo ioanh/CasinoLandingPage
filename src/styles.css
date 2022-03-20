@@ -42,6 +42,19 @@ app-main {
     border-radius: 15px;
 }
 
+.game:hover .game-footer, .game.hover .game-footer{
+    top: 0;
+    right: 0;
+    background-color: transparent;
+}
+.game:hover .hover-footer, .game.hover .hover-footer{
+    display: block;
+}
+.game:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+                       rgba(0, 0, 0, 0.7)), url("../src/assets/test.png");
+}
+
 .game-footer{
     background-color: #1D2129;
     color: white;
@@ -50,7 +63,6 @@ app-main {
     left: 0; 
     width: 100%;
     border-radius: 0 0 15px 15px;
-    display: none;
 }
 
 .hover-footer {
@@ -58,6 +70,7 @@ app-main {
     bottom: 0;
     left: 0;
     width: 100%;
+    display:none;
 }
 
 .hover-footer button {
@@ -65,6 +78,16 @@ app-main {
     border: none;
     text-align: center;
     text-decoration: none;
+    height: 5vh;
+    color: white;
+}
+.hover-footer button:first-child {
+    background-color: #232833;
+    border-radius: 0 0 0 15px;
+}
+.hover-footer button:last-child {
+    background-color: #0074FA;
+    border-radius: 0 0 15px 0;
 }
 
 .game-footer span {
