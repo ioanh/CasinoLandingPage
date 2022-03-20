@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { api } from '../services/api';
 
 @Component({
   selector: 'app-main',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _api: api) { }
 
   ngOnInit(): void {
+    console.log(this._api.getapi().subscribe((data)=> {
+      console.log(data);
+    }));
   }
 
 }
