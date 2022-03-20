@@ -39,14 +39,19 @@ app-main {
 }
 
 .game{
-    /* height: 20vh; */
     /* background-color: red; */
-    background-image: url("../src/assets/test.png");
+    /* background-image: url("../src/assets/test.png"); */
     background-position: center;
     background-size: cover;
     position: relative;
     min-height: 25vh;
     border-radius: 15px;
+    overflow: hidden;
+}
+
+.game_image {
+    width: 100%;
+    object-fit: cover;
 }
 
 .game:hover .game-footer, .game.hover .game-footer{
