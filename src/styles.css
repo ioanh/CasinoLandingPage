@@ -28,6 +28,7 @@ app-main {
     display: grid;
     grid-template-areas: 'auto auto auto auto';
     background-color: #15171D;
+    padding: 25px;
 }
 
 .game{
@@ -38,6 +39,7 @@ app-main {
     background-size: cover;
     position: relative;
     min-height: 25vh;
+    border-radius: 15px;
 }
 
 .game-footer{
@@ -47,4 +49,29 @@ app-main {
     bottom: 0;
     left: 0; 
     width: 100%;
+    border-radius: 0 0 15px 15px;
+    display: none;
+}
+
+.hover-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.hover-footer button {
+    width: 50%;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.game-footer span {
+    float: right;
+    padding-right: 5px;
+    color: #00EBFF;
+}
+.game-footer p {
+    padding-left: 5px;
 }
