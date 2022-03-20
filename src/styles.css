@@ -33,4 +33,18 @@ app-main {
 .game{
     /* height: 20vh; */
     /* background-color: red; */
+    background-image: url("../src/assets/test.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 25vh;
+}
+
+.game-footer{
+    background-color: #1D2129;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    width: 100%;
 }
