@@ -2,10 +2,10 @@
     <img  class="banner_image" src="../../assets/banner.png" />
 </div>
 <div class="games-container">
-    <div class="game headGame">
-        <img class="game_image" src="../../assets/test.png">
+    <div class="game" *ngFor="let el of games; let i = index" [ngClass]="{'headGame': i == 0, 'hide': el[1].vendor_code !== 'CTRGSECASINO'}">
+        <img class="game_image" src={{el[1].img_url}}>
         <div class="game-footer">
-            <p>Game name <span>✰</span></p>
+            <p>{{el[1].name}} <span>✰</span></p>
         </div>
         <div class="hover-footer">
             <button>Демо</button>
@@ -13,5 +13,3 @@
         </div>
     </div>
 </div>
-
-<p *ngFor="let el of games">rly</p>

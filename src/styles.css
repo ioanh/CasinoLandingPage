@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+.hide {
+    display: none;
+}
+
 .headGame{
     grid-area: headGame;
 }
@@ -91,6 +95,7 @@ app-main {
     text-decoration: none;
     height: 5vh;
     color: white;
+    cursor: pointer;
 }
 .hover-footer button:first-child {
     background-color: #232833;

@@ -12,13 +12,14 @@ export class MainComponent implements OnInit {
   constructor(private _api: api) { }
 
   games: any;
+  games2: any;
 
   ngOnInit(): void {
     this._api.getapi().subscribe((data) => {
-      console.log(data.game_list)
-      console.log(Object.entries(data.game_list))
-      this.games = Object.entries(data.game_list);
-      console.log(this.games[0][1])
+      this.games = Object.entries(data.game_list)
+      // .filter(el => {
+      //   el[1].vendor_code === "CTRGSECASINO"
+      // })
     })
   }
 
