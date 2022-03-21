@@ -42,6 +42,8 @@ app-main {
     gap: 20px;
 }
 
+
+
 .game{
     /* background-color: red; */
     /* background-image: url("../src/assets/test.png"); */
@@ -113,4 +115,13 @@ app-main {
 }
 .game-footer p {
     padding-left: 5px;
+}
+
+@media screen and (max-width: 900px){
+    .games-container{
+        grid-template-areas:
+         'headGame'
+         'auto auto';
+
+    }
 }
